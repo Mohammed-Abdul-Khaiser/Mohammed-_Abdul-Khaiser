@@ -302,7 +302,7 @@ ul   { list-style: none; }
   background: var(--grad-main); opacity: .12; z-index: 0;
 }
 .about-banner-card { position: relative; z-index: 1; border-radius: 28px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); }
-.about-img { width: 100%; height: 260px; object-fit: cover; object-position: center; }
+.about-img { width: 200%; height: 260px; object-fit: cover; object-position: center; }
 .about-exp-badge {
   position: absolute; bottom: -18px; right: -18px; z-index: 2;
   background: var(--grad-main); padding: 18px 22px; border-radius: 18px;
