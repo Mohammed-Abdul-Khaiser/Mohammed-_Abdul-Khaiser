@@ -304,12 +304,12 @@ ul   { list-style: none; }
 .about-banner-card { position: relative; z-index: 1; border-radius: 28px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); }
 .about-img { width: 200%; height: 260px; object-fit: cover; object-position: center; }
 .about-exp-badge {
-  position: absolute; bottom: -18px; right: -18px; z-index: 2;
-  background: var(--grad-main); padding: 18px 22px; border-radius: 18px;
+  position: absolute; bottom: -18px; left: -18px; z-index: 2;
+  background: var(--grad-main); padding: 9px 19px; border-radius: 15px;
   text-align: center; box-shadow: var(--shadow);
 }
-.exp-num  { display: block; font-family: var(--font-main); font-size: 30px; font-weight: 900; color: #fff; }
-.exp-lbl  { font-size: 11px; color: rgba(255,255,255,.8); font-weight: 500; }
+.exp-num  { display: block; font-family: var(--font-main); font-size: 30px; font-weight: 600; color: #fff; }
+.exp-lbl  { font-size: 10px; color: rgba(255,255,255,.8); font-weight: 500; }
 .about-intro { font-size: 17px; line-height: 1.8; color: var(--text-secondary); margin-bottom: 18px; }
 .about-intro strong { color: var(--text-primary); }
 .about-body { font-size: 14px; line-height: 1.8; color: var(--text-muted); margin-bottom: 32px; }
