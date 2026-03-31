@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammed Abdul Khaiser — Founder & CEO, HITL PVT LTD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">MAK</div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+    <div class="loader-sub">HITL PVT LTD</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <a href="#hero" class="nav-brand">
+    <span class="brand-hex">⬡</span>
+    <span>MAK</span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#about"        class="nav-link">About</a>
+    <a href="#experience"   class="nav-link">Experience</a>
+    <a href="#techstack"    class="nav-link">Tech Stack</a>
+    <a href="#achievements" class="nav-link">Achievements</a>
+    <a href="#projects"     class="nav-link">Projects</a>
+    <a href="#gallery"      class="nav-link">Gallery</a>
+    <a href="#contact"      class="nav-link nav-cta">Contact</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ════════════════════════ HERO ════════════════════════ -->
+<section id="hero" class="hero">
+  <div class="hero-particles" id="particles"></div>
+
+  <!-- Real Banner Image as hero background overlay -->
+  <div class="hero-banner-bg">
+    <img src="https://github.com/Mohammed-Abdul-Khaiser/image/raw/main/Black%20and%20White%20Simple%20Manager%20LinkedIn%20Background%20Photo.png"
+         alt="Banner"
+         class="hero-banner-img"
+         onerror="this.style.display='none'"/>
+    <div class="hero-banner-overlay"></div>
+  </div>
+
+  <div class="hero-glow glow1"></div>
+  <div class="hero-glow glow2"></div>
+  <div class="hero-glow glow3"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Founder &amp; CEO · HITL PVT LTD
+      </div>
+      <h1 class="hero-name">
+        Mohammed<br/>
+        <span class="name-highlight">Abdul Khaiser</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-static">Founder &amp; CEO — </span>
+        <span class="role-company">HITL PVT LTD &amp; HITL Group of Companies</span>
+      </div>
+      <div class="hero-tagline">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary-hero">
+          <span>Get In Touch</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" class="btn-ghost-hero">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub Profile</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">5+</span>
+          <span class="stat-lbl">Years Expertise</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">500+</span>
+          <span class="stat-lbl">Students Mentored</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-lbl">National Awards</span>
+        </div>
+      </div>
+      <!-- Quick social strip -->
+      <div class="hero-socials">
+        <a href="mailto:mohammadabdulkhaiser@gmail.com" class="hs-link" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/mohammed-abdul-khaiser-6369b7246/" target="_blank" class="hs-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/abdul_khaiser._/" target="_blank" class="hs-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/919553650061" target="_blank" class="hs-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" class="hs-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="profile-ring ring-outer"></div>
+      <div class="profile-ring ring-mid"></div>
+      <div class="profile-frame">
+        <!-- Replace src with your actual photo path -->
+        <img src="https://ui-avatars.com/api/?name=MAK&size=400&background=0d1b4b&color=4f9ef8&bold=true&font-size=0.4"
+             alt="Mohammed Abdul Khaiser"
+             class="profile-img"
+             id="profileImg"/>
+        <div class="profile-badge badge-tl" title="Embedded Systems"><i class="fa-solid fa-microchip"></i></div>
+        <div class="profile-badge badge-tr" title="Robotics"><i class="fa-solid fa-robot"></i></div>
+        <div class="profile-badge badge-bl" title="Artificial Intelligence"><i class="fa-solid fa-brain"></i></div>
+        <div class="profile-badge badge-br" title="IoT"><i class="fa-solid fa-wifi"></i></div>
+      </div>
+      <div class="floating-card fc1">
+        <i class="fa-solid fa-trophy"></i>
+        <span>National Award Winner</span>
+      </div>
+      <div class="floating-card fc2">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>EdTech Entrepreneur</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-indicator">
+    <div class="scroll-wheel"></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- ════════════════════════ ABOUT ════════════════════════ -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-label">01 — Who I Am</div>
+    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <div class="about-image-wrap">
+          <div class="about-img-accent"></div>
+          <!-- Hero Banner used as about visual -->
+          <div class="about-banner-card">
+            <img src="https://github.com/Mohammed-Abdul-Khaiser/image/raw/main/Black%20and%20White%20Simple%20Manager%20LinkedIn%20Background%20Photo.png"
+                 alt="Mohammed Abdul Khaiser"
+                 class="about-img"
+                 onerror="this.src='https://ui-avatars.com/api/?name=MAK&size=500&background=1a1050&color=4f9ef8&bold=true&font-size=0.35'"/>
+          </div>
+          <div class="about-exp-badge">
+            <span class="exp-num">5+</span>
+            <span class="exp-lbl">Years of<br/>Excellence</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right reveal">
+        <p class="about-intro">
+          I am <strong>Mohammed Abdul Khaiser</strong>, Founder &amp; CEO of <strong>HITL PVT LTD</strong> and the <strong>HITL Group of Companies</strong> — passionately driving innovation in technical education and entrepreneurship.
+        </p>
+        <p class="about-body">
+          With strong expertise across Embedded Systems, IoT, Robotics, AI, and Data Analytics, I empower students and professionals through hands-on projects, internships, and tailored training programs. My goal is to bridge the gap between academia and industry by mentoring and providing real-world learning experiences.
+        </p>
+
+        <div class="expertise-grid">
+          <div class="expertise-item"><div class="exp-icon"><i class="fa-solid fa-microchip"></i></div><span>Embedded Systems</span></div>
+          <div class="expertise-item"><div class="exp-icon"><i class="fa-solid fa-wifi"></i></div><span>IoT & Connectivity</span></div>
+          <div class="expertise-item"><div class="exp-icon"><i class="fa-solid fa-robot"></i></div><span>Robotics</span></div>
+          <div class="expertise-item"><div class="exp-icon"><i class="fa-solid fa-brain"></i></div><span>Artificial Intelligence</span></div>
+          <div class="expertise-item"><div class="exp-icon"><i class="fa-solid fa-chart-line"></i></div><span>Data Analytics</span></div>
+          <div class="expertise-item"><div class="exp-icon"><i class="fa-solid fa-people-group"></i></div><span>Mentorship</span></div>
+        </div>
+
+        <div class="about-links-row">
+          <a href="#contact" class="btn-outline-accent">
+            <span>Let's Collaborate</span>
+            <i class="fa-solid fa-handshake"></i>
+          </a>
+          <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" class="btn-outline-accent btn-secondary">
+            <i class="fa-brands fa-github"></i>
+            <span>View GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ EXPERIENCE ════════════════════════ -->
+<section id="experience" class="section experience-section">
+  <div class="container">
+    <div class="section-label">02 — Career Journey</div>
+    <h2 class="section-title">My <span class="gradient-text">Experience</span></h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-card">
+          <div class="tl-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="tl-tag">Current</div>
+          <h3 class="tl-title">Founder &amp; CEO</h3>
+          <div class="tl-company">HITL PVT LTD &amp; HITL Group of Companies</div>
+          <p class="tl-desc">Founded and leading an EdTech company focused on delivering industry-ready technical training programs. Driving curriculum development, institutional partnerships, and startup incubation for students.</p>
+          <div class="tl-skills"><span>Leadership</span><span>EdTech</span><span>Strategy</span><span>Entrepreneurship</span></div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="right">
+        <div class="timeline-card">
+          <div class="tl-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <div class="tl-tag">Trainer</div>
+          <h3 class="tl-title">Technical Trainer</h3>
+          <div class="tl-company">IT · Embedded Systems · Robotics</div>
+          <p class="tl-desc">Delivering hands-on training programs across colleges and institutions in Embedded Systems (Arduino, ESP32, Raspberry Pi), IoT architectures, Robotics, Python, Machine Learning, and modern IT fundamentals.</p>
+          <div class="tl-skills"><span>Arduino</span><span>ESP32</span><span>Raspberry Pi</span><span>Python</span><span>ML</span></div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+
+      <div class="timeline-item reveal" data-side="left">
+        <div class="timeline-card">
+          <div class="tl-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <div class="tl-tag">Mentor</div>
+          <h3 class="tl-title">Mentor &amp; Guide</h3>
+          <div class="tl-company">Student Projects · Internships · Startups</div>
+          <p class="tl-desc">Mentoring students through final-year projects, internships, and early-stage startups. Helping translate ideas into functional prototypes and guiding young entrepreneurs toward market-ready solutions.</p>
+          <div class="tl-skills"><span>Mentorship</span><span>Startups</span><span>R&D</span><span>Incubation</span></div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ TECH STACK ════════════════════════ -->
+<section id="techstack" class="section techstack-section">
+  <div class="container">
+    <div class="section-label">03 — Skills &amp; Technologies</div>
+    <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+
+    <div class="stack-categories">
+
+      <div class="stack-category reveal">
+        <div class="sc-header">
+          <div class="sc-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Embedded &amp; Hardware</h3>
+        </div>
+        <div class="stack-pills">
+          <div class="stack-pill"><i class="fa-solid fa-microchip"></i> Embedded Systems (C/C++)</div>
+          <div class="stack-pill"><i class="fa-solid fa-circuit-board"></i> Eagle PCB Design</div>
+          <div class="stack-pill"><i class="fa-solid fa-wifi"></i> IoT Devices &amp; Cloud</div>
+          <div class="stack-pill"><i class="fa-solid fa-robot"></i> Robotics &amp; Automation</div>
+        </div>
+      </div>
+
+      <div class="stack-category reveal">
+        <div class="sc-header">
+          <div class="sc-icon" style="background:var(--grad-purple)"><i class="fa-solid fa-brain"></i></div>
+          <h3>AI / ML &amp; Data</h3>
+        </div>
+        <div class="stack-pills">
+          <div class="stack-pill"><i class="fa-solid fa-brain"></i> Machine Learning</div>
+          <div class="stack-pill"><i class="fa-solid fa-network-wired"></i> Deep Learning</div>
+          <div class="stack-pill"><i class="fa-solid fa-robot"></i> Artificial Intelligence</div>
+          <div class="stack-pill"><i class="fa-solid fa-image"></i> Image Processing</div>
+          <div class="stack-pill"><i class="fa-solid fa-chart-line"></i> Data Analytics</div>
+        </div>
+      </div>
+
+      <div class="stack-category reveal">
+        <div class="sc-header">
+          <div class="sc-icon" style="background:var(--grad-orange)"><i class="fa-brands fa-python"></i></div>
+          <h3>Programming &amp; Web</h3>
+        </div>
+        <div class="stack-pills">
+          <div class="stack-pill"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="stack-pill"><i class="fa-brands fa-python"></i> Python Full Stack</div>
+          <div class="stack-pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+          <div class="stack-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+          <div class="stack-pill"><i class="fa-brands fa-js"></i> JavaScript</div>
+          <div class="stack-pill"><i class="fa-solid fa-cloud"></i> Cloud Basics</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scrolling badge strip -->
+    <div class="badge-strip-wrap">
+      <div class="badge-strip" id="badgeStrip">
+        <span class="bs-badge"><i class="fa-solid fa-microchip"></i> Embedded Systems</span>
+        <span class="bs-badge eagle"><i class="fa-solid fa-circuit-board"></i> Eagle PCB</span>
+        <span class="bs-badge iot"><i class="fa-solid fa-wifi"></i> IoT</span>
+        <span class="bs-badge robo"><i class="fa-solid fa-robot"></i> Robotics</span>
+        <span class="bs-badge data"><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+        <span class="bs-badge py"><i class="fa-brands fa-python"></i> Python</span>
+        <span class="bs-badge ml"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+        <span class="bs-badge dl"><i class="fa-solid fa-network-wired"></i> Deep Learning</span>
+        <span class="bs-badge ai"><i class="fa-solid fa-robot"></i> Artificial Intelligence</span>
+        <span class="bs-badge img"><i class="fa-solid fa-image"></i> Image Processing</span>
+        <span class="bs-badge html"><i class="fa-brands fa-html5"></i> HTML5</span>
+        <span class="bs-badge css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        <span class="bs-badge js"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="bs-badge py2"><i class="fa-brands fa-python"></i> Python Full Stack</span>
+        <span class="bs-badge cloud"><i class="fa-solid fa-cloud"></i> Cloud Basics</span>
+        <!-- Duplicate for seamless scroll -->
+        <span class="bs-badge"><i class="fa-solid fa-microchip"></i> Embedded Systems</span>
+        <span class="bs-badge eagle"><i class="fa-solid fa-circuit-board"></i> Eagle PCB</span>
+        <span class="bs-badge iot"><i class="fa-solid fa-wifi"></i> IoT</span>
+        <span class="bs-badge robo"><i class="fa-solid fa-robot"></i> Robotics</span>
+        <span class="bs-badge data"><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+        <span class="bs-badge py"><i class="fa-brands fa-python"></i> Python</span>
+        <span class="bs-badge ml"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+        <span class="bs-badge dl"><i class="fa-solid fa-network-wired"></i> Deep Learning</span>
+        <span class="bs-badge ai"><i class="fa-solid fa-robot"></i> AI</span>
+        <span class="bs-badge img"><i class="fa-solid fa-image"></i> Image Processing</span>
+        <span class="bs-badge html"><i class="fa-brands fa-html5"></i> HTML5</span>
+        <span class="bs-badge css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        <span class="bs-badge js"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="bs-badge py2"><i class="fa-brands fa-python"></i> Python Full Stack</span>
+        <span class="bs-badge cloud"><i class="fa-solid fa-cloud"></i> Cloud Basics</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ ACHIEVEMENTS ════════════════════════ -->
+<section id="achievements" class="section achievements-section">
+  <div class="container">
+    <div class="section-label">04 — Recognition</div>
+    <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+
+    <div class="achievements-grid">
+
+      <div class="achievement-card reveal">
+        <div class="ach-glow"></div>
+        <div class="ach-icon-wrap">
+          <div class="ach-icon"><i class="fa-solid fa-book-open"></i></div>
+        </div>
+        <div class="ach-ribbon">Reviewer</div>
+        <h3 class="ach-title">IJIRT Reviewer</h3>
+        <p class="ach-org">International Journal for Innovative Research in Technology</p>
+        <p class="ach-desc">Reviewer Recognition Certificate awarded for peer reviewing research papers in technology and engineering domains, contributing to academic excellence.</p>
+        <div class="ach-star-row"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      </div>
+
+      <div class="achievement-card reveal featured-ach">
+        <div class="ach-glow"></div>
+        <div class="ach-icon-wrap">
+          <div class="ach-icon gold"><i class="fa-solid fa-medal"></i></div>
+        </div>
+        <div class="ach-ribbon gold-ribbon">Best Award</div>
+        <h3 class="ach-title">Best Service Award</h3>
+        <p class="ach-org">Magic Book of Records</p>
+        <p class="ach-desc">Honoured with the Best Service Award for outstanding contributions to education and technology training at the national level.</p>
+        <div class="ach-star-row gold-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="ach-glow"></div>
+        <div class="ach-icon-wrap">
+          <div class="ach-icon orange"><i class="fa-solid fa-award"></i></div>
+        </div>
+        <div class="ach-ribbon orange-ribbon">National</div>
+        <h3 class="ach-title">National Excellence Award</h3>
+        <p class="ach-org">Welred Foundation</p>
+        <p class="ach-desc">National Excellence Achievement Award &amp; Excellent Entrepreneur Contribution Award from Welred Foundation for pioneering work in EdTech.</p>
+        <div class="ach-star-row"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ PROJECTS ════════════════════════ -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-label">05 — My Work</div>
+    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal" data-color="blue">
+        <div class="proj-visual">
+          <div class="proj-bg proj-bg-blue"></div>
+          <div class="proj-icon-main"><i class="fa-solid fa-cloud-sun"></i></div>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tag">IoT</div>
+          <h3 class="proj-title">IoT Weather Station</h3>
+          <p class="proj-desc">ESP32-based sensor system integrating MQTT protocol with cloud dashboards for real-time environmental monitoring of temperature, humidity, and pressure.</p>
+          <div class="proj-stack">
+            <span>ESP32</span><span>MQTT</span><span>Cloud</span><span>DHT22</span><span>Node-RED</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="proj-link proj-link-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-color="purple">
+        <div class="proj-visual">
+          <div class="proj-bg proj-bg-purple"></div>
+          <div class="proj-icon-main"><i class="fa-solid fa-robot"></i></div>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tag">Robotics</div>
+          <h3 class="proj-title">Autonomous Robot</h3>
+          <p class="proj-desc">ROS-powered autonomous robot equipped with LIDAR and AI navigation for indoor mapping and real-time obstacle avoidance — built for research and education.</p>
+          <div class="proj-stack">
+            <span>ROS</span><span>LIDAR</span><span>Raspberry Pi</span><span>Python</span><span>OpenCV</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="proj-link proj-link-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-color="orange">
+        <div class="proj-visual">
+          <div class="proj-bg proj-bg-orange"></div>
+          <div class="proj-icon-main"><i class="fa-solid fa-eye"></i></div>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tag">AI / Deep Learning</div>
+          <h3 class="proj-title">AI Image Classifier</h3>
+          <p class="proj-desc">Deep learning model capable of classifying multi-class image datasets with high accuracy using CNN architecture — trained and validated on real-world data.</p>
+          <div class="proj-stack">
+            <span>TensorFlow</span><span>Keras</span><span>Python</span><span>CNN</span><span>OpenCV</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="proj-link proj-link-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-color="teal">
+        <div class="proj-visual">
+          <div class="proj-bg proj-bg-teal"></div>
+          <div class="proj-icon-main"><i class="fa-solid fa-microchip"></i></div>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tag">Hardware / PCB</div>
+          <h3 class="proj-title">Custom PCB Design</h3>
+          <p class="proj-desc">Designed and fabricated custom embedded control boards using Eagle CAD tailored for IoT and robotics projects — from schematic to manufacturing-ready Gerber files.</p>
+          <div class="proj-stack">
+            <span>Eagle CAD</span><span>SMD</span><span>Gerber</span><span>IoT</span><span>Embedded</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="proj-link proj-link-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Gallery</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ GALLERY ════════════════════════ -->
+<section id="gallery" class="section gallery-section">
+  <div class="container">
+    <div class="section-label">06 — Moments</div>
+    <h2 class="section-title">Photo <span class="gradient-text">Gallery</span></h2>
+    <p class="gallery-note">Replace placeholder images below with your actual photos.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item g-large reveal">
+        <img src="https://picsum.photos/seed/workshop1/800/500" alt="Training Workshop"/>
+        <div class="gallery-overlay">
+          <i class="fa-solid fa-expand"></i><span>Training Workshop</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="https://picsum.photos/seed/robot42/400/300" alt="Robotics Session"/>
+        <div class="gallery-overlay">
+          <i class="fa-solid fa-expand"></i><span>Robotics Session</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="https://picsum.photos/seed/award99/400/300" alt="Award Ceremony"/>
+        <div class="gallery-overlay">
+          <i class="fa-solid fa-expand"></i><span>Award Ceremony</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="https://picsum.photos/seed/iot77/400/300" alt="IoT Lab"/>
+        <div class="gallery-overlay">
+          <i class="fa-solid fa-expand"></i><span>IoT Lab Session</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="https://picsum.photos/seed/mentor55/400/300" alt="Mentoring"/>
+        <div class="gallery-overlay">
+          <i class="fa-solid fa-expand"></i><span>Mentoring Students</span>
+        </div>
+      </div>
+      <div class="gallery-item g-wide reveal">
+        <img src="https://picsum.photos/seed/conf22/800/300" alt="Tech Conference"/>
+        <div class="gallery-overlay">
+          <i class="fa-solid fa-expand"></i><span>Tech Conference</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ CONTACT ════════════════════════ -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-label">07 — Let's Connect</div>
+    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+
+    <div class="contact-layout">
+      <div class="contact-left reveal">
+        <h3 class="contact-heading">Ready to collaborate?</h3>
+        <p class="contact-intro">Whether you're looking for a trainer, a mentor for your students, or a tech partner — I'm here. Let's build something meaningful together.</p>
+
+        <div class="contact-cards">
+          <a href="mailto:mohammadabdulkhaiser@gmail.com" class="contact-card">
+            <div class="cc-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="cc-info">
+              <span class="cc-label">Email</span>
+              <span class="cc-value">mohammadabdulkhaiser@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right cc-arrow"></i>
+          </a>
+          <a href="https://wa.me/919553650061" target="_blank" class="contact-card">
+            <div class="cc-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="cc-info">
+              <span class="cc-label">WhatsApp</span>
+              <span class="cc-value">+91 9553650061 — Chat directly</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right cc-arrow"></i>
+          </a>
+        </div>
+
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/mohammed-abdul-khaiser-6369b7246/" target="_blank" class="social-btn linkedin">
+            <i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span>
+          </a>
+          <a href="https://www.instagram.com/abdul_khaiser._/" target="_blank" class="social-btn instagram">
+            <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+          </a>
+          <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" class="social-btn github">
+            <i class="fa-brands fa-github"></i><span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="John Doe" required/>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="john@example.com" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Training Inquiry / Collaboration / Mentorship"/>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell me about your project or training requirement…" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-success hidden" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════ FOOTER ════════════════════════ -->
+<footer class="footer">
+  <div class="footer-glow"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-hex">⬡</span>
+        <div>
+          <div class="footer-name">Mohammed Abdul Khaiser</div>
+          <div class="footer-role">Founder &amp; CEO — HITL PVT LTD</div>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#techstack">Tech Stack</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-quote">
+      <div class="quote-line"></div>
+      <blockquote>
+        "Guiding the next generation of innovators through real-world tech training and meaningful mentorship."
+      </blockquote>
+      <div class="quote-line"></div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Mohammed Abdul Khaiser · HITL PVT LTD. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="mailto:mohammadabdulkhaiser@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/mohammed-abdul-khaiser-6369b7246/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/abdul_khaiser._/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/919553650061" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/Mohammed-Abdul-Khaiser" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+  <img src="" alt="" id="lbImg"/>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
