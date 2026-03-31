@@ -305,7 +305,7 @@ ul   { list-style: none; }
 .about-img { width: 200%; height: 260px; object-fit: cover; object-position: center; }
 .about-exp-badge {
   position: absolute; bottom: -18px; left: -18px; z-index: 2;
-  background: var(--grad-main); padding: 9px 19px; border-radius: 15px;
+  background: var(--grad-main); padding: 10px 20px; border-radius: 15px;
   text-align: center; box-shadow: var(--shadow);
 }
 .exp-num  { display: block; font-family: var(--font-main); font-size: 30px; font-weight: 600; color: #fff; }
